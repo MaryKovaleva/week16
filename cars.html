@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="font-family: 'Courier New', Courier, monospace;font-size: large; display: flex;height: 80%;width: 100%;flex-wrap: wrap;padding: auto;">Калькулятор стоимости авто:
+    <select style="width: 80%;margin-bottom: 20px;margin-right: 40px;" onchange="" name="cars" id="cars">
+        <option value="Audi" onclick="select(this)">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Ford">Ford</option>
+        <option value="Honda">Honda</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Lada">Lada</option>
+        <option value="BMW">BMW</option>
+    </select>
+    <select id="Audi">
+        <option>A1</option>
+        <option>A2</option>
+    </select>
+    <select id="Mercedes">
+        <option>A-class</option>
+        <option>B-class</option>
+    </select>
+    <select id="Ford">
+        <option>Edge</option>
+        <option>C-MAX</option>
+    </select>
+    <select id="Honda">
+        <option>Accord</option>
+        <option>Acty</option>
+    </select>
+    <select id="Ferrari">
+        <option>612</option>
+        <option>358</option>
+    </select>
+    <select id="Lada">
+        <option>111 Oka</option>
+        <option>2104 Classic</option>
+    </select>
+    <select id="BMW">
+        <option>M3</option>
+        <option>M6</option>
+    </select>
+    <div style="width: 100%;margin-bottom: 20px;margin-top: 20px;">Возраст автомобиля
+    <input type="checkbox" value="1year" checked>меньше года
+    <input type="checkbox" value="3years">от 3 до 5 лет
+    <input type="checkbox" value="7years">больше 7 лет
+</div>
+    <button style="width: 10%;">Рассчитать стоимость</button>
+    <div></div>
+</div>
+    <script src="cars.js"></script>
+</body>
+</html>
